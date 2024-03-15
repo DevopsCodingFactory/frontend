@@ -2,6 +2,7 @@
 import { FormEvent, useState } from 'react';
 
 interface Pokemon {
+  id: string;
   name: string;
   type: string;
   generation: string;
@@ -11,6 +12,7 @@ export default function Home() {
   const [inputValue, setInputValue] = useState('');
 
   const pokemonChoose = {
+    id: '23',
     name: 'Bulbizar',
     type: 'Electrique',
     generation: '1',
