@@ -1,6 +1,11 @@
 ## Getting Started
 
-To run the project use Docker:
+To run the project use the makefile commands.
 
-Docker build -t frontend .
-Docker run -p 3000:3000 frontend
+To install :
+
+Make install
+
+To run the project :
+
+Make run
