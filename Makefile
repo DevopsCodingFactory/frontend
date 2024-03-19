@@ -10,6 +10,8 @@ logs: ## logs
 	$(DOCKER_COMPOSE) logs --tail=10 -f
 prettier: ## Install all dependencies
 	$(DOCKER_COMPOSE) exec frontend npm run lint
+test: ## Run tests
+    $(DOCKER_COMPOSE) exec frontend npm run test
 down: ## Delete the Docker containers and volumes
 	$(DOCKER_COMPOSE) down -v
 cli:

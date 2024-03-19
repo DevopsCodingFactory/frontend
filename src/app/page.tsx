@@ -16,8 +16,11 @@ export default function Home() {
     setInputValue(event.target.value);
   };
 
+  const python_url = "http://172.20.10.3:8000/pokemon";
+  const node_url = "http://172.20.10.3:8000/pokemon";
+
     const fetchData = async () => {
-        const reponse = await fetch("http://0.0.0.0:8000/pokemon");
+        const reponse = await fetch(node_url);
         const pokemons = await reponse.json();
         const myPokemon = pokemons.filter((p: Pokemon) => p.name === inputValue);
         if (myPokemon.length === 0) {
