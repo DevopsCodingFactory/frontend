@@ -9,7 +9,8 @@
     "lint": "next lint",
     "format:fix": "prettier --write --ignore-path .gitignore .",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "audit": "npm audit"
   },
   "dependencies": {
     "eslint-config-prettier": "^9.1.0",
